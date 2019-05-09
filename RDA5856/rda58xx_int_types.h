@@ -1,0 +1,20 @@
+#ifndef RDA58XX_INT_TYPES_H
+#define RDA58XX_INT_TYPES_H
+
+#if defined(__ARMCC_VERSION)
+
+typedef unsigned char       uint8_t;
+typedef unsigned short      uint16_t;
+typedef unsigned int        uint32_t;
+typedef unsigned long long  uint64_t;
+typedef signed char         int8_t;
+typedef signed short        int16_t;
+typedef signed int          int32_t;
+typedef signed long long    int64_t;
+
+#else
+#include <stdint.h>
+#endif
+
+#endif
+
